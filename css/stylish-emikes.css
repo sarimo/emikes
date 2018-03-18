@@ -1,0 +1,187 @@
+/*
+*   Style gae emikes
+*   @dion.dr
+*/
+
+
+/* TAMPILAN & COLOR */
+
+@import url('https://fonts.googleapis.com/css?family=Wellfleet');
+
+p,
+li {
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Wellfleet", cursive;
+}
+
+hr {
+    background-color: #ececec;
+}
+
+.font-iki {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.bg-abu {
+    background-color: #f9f9f9;
+}
+
+.bg-ijo {
+    background-color: #d7f4d7;
+}
+
+.border-ijo {
+    border-color: #c6e9af;
+    box-shadow: 1px 1px 2px 1px #ccc;
+}
+
+.text-ijo {
+    color: #2ca02c;
+}
+
+.kb-icon {
+    background-color: #fff;
+    color: #28a745;
+    height: 6rem;
+    width: 6rem;
+    display: block;
+    line-height: 6.5rem;
+    font-size: 2rem;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.icon-kb-sub {
+    background-color: #28a745;
+    color: #fff;
+    padding: 8px 6px 8px 10px;
+    margin-right: 3px;
+    font-size: 1.3rem;
+}
+
+ol.angka-kurung {
+    counter-reset: list;
+}
+
+ol.angka-kurung > li {
+    list-style-type: none;
+    position: relative;
+}
+
+ol.angka-kurung > li:before {
+    counter-increment: list;
+    content: counter(list, decimal) ") ";
+    position: absolute;
+    left: -1.4em;
+}
+
+.gambar-sedengan {
+    width: 200px;
+}
+
+.tebal {
+    font-weight: bold;
+}
+
+.nav-pills a {
+    color: #777;
+    font-weight: bold;
+}
+
+.nav-pills a:hover {
+    color: #222;
+}
+
+.nav-pills .nav-link.active {
+    background-color: transparent;
+    color: #555;
+    border: 1.3px dashed #777;
+    border-radius: 33px 33px 0 33px;
+    margin-left: 9px
+}
+
+
+
+/* MARGIN, PADDING, DKK */
+
+.munggah {
+    margin-top: -41px;
+}
+
+.mepet {
+    padding: 0;
+}
+
+img {
+    margin-bottom: 5px;
+}
+
+
+/* QUIZ */
+
+.soal {
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: -21px;
+    text-indent: -1em;
+}
+
+ul.answers,
+ul.responses,
+ul.answers li,
+ul.responses li {
+    list-style-type: lower-alpha;
+    margin-left: 0em;
+}
+
+.responses li {
+    list-style-type: none !important;
+}
+
+.button {
+    padding: 9px 15px;
+    color: #ff7f2a;
+    border: 1.3px solid #ff7f2a;
+    border-bottom: 3px solid #ff7f2a;
+    background-color: #fff;
+    margin-left: 1em;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #ff7f2a;
+}
+
+.sebelum {
+    border: 1.3px solid #37be37;
+    border-bottom: 3px solid #37be37;
+    color: #37be37;
+}
+
+.sebelum:hover {
+    color: #fff;
+    background-color: #37be37;
+}
+
+.responses, .answers{
+    margin-left: -3.2em !important;
+}
+
+.responses {
+    margin-top: -17px;
+    margin-bottom: 17px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.responses span {
+    font-size: 1.1em !important;
+}
