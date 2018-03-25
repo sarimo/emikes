@@ -3,7 +3,6 @@
 *   @dion.dr
 */
 
-
 /* TAMPILAN & COLOR */
 
 @import url('https://fonts.googleapis.com/css?family=Wellfleet');
@@ -11,6 +10,7 @@
 p,
 li {
     color: #333;
+    text-align: justify;
 }
 
 h1,
@@ -47,7 +47,23 @@ hr {
     color: #2ca02c;
 }
 
-.kb-icon {
+.dashed-ijo {
+    border: 1px dashed #2ca02c;
+}
+
+.dashed-biru {
+    border: 1px dashed #546e7a;
+}
+
+
+.header-petunjuk {
+    background-color: #546e7a;
+    color: #fff;
+    padding: 7px 13px;
+}
+
+.kb-icon,
+.kb_ii-icon {
     background-color: #fff;
     color: #28a745;
     height: 6rem;
@@ -58,10 +74,14 @@ hr {
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
+.kb_ii-icon {
+    color: #ff7f2a;
+}
+
 .icon-kb-sub {
     background-color: #28a745;
     color: #fff;
-    padding: 8px 6px 8px 10px;
+    padding: 8px;
     margin-right: 3px;
     font-size: 1.3rem;
 }
@@ -91,23 +111,133 @@ ol.angka-kurung > li:before {
 }
 
 .nav-pills a {
-    color: #777;
+    color: rgba(255, 255, 255, 0.9);
     font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 33px 33px 0 33px !important;
+    margin-top: 3px;
 }
 
 .nav-pills a:hover {
-    color: #222;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1.3px dashed rgba(255, 255, 255, 0.5);
 }
 
 .nav-pills .nav-link.active {
-    background-color: transparent;
-    color: #555;
-    border: 1.3px dashed #777;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border: 1.3px dashed #fff;
     border-radius: 33px 33px 0 33px;
-    margin-left: 9px
 }
 
+.icon-awal img:hover,
+.icon-awal p:hover {
+    opacity: 0.9;
+}
 
+.icon-awal img {
+    height: 150px;
+    padding: 13px;
+}
+
+.icon-judul {
+    height: 90px;
+    margin-top: -9px;
+}
+
+.icon-gambar:hover {
+    opacity: 0.9;
+}
+
+.text-sebelumnya,
+.text-selanjutnya {
+    text-transform: none;
+    font-style: italic;
+    opacity: 0.8;
+    padding-left: 9px;
+    font-weight: normal;
+}
+
+.text-selanjutnya {
+    padding-left: 0;
+    padding-right: 7px;
+}
+
+.text-semi-putih {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.border-njero {
+    border: 1px solid;
+    padding: 10px;
+}
+
+.bg-petunjuk {
+    background: url(../gambar/scott-webb-199470-unsplash-1.jpg);
+    width: 100%;
+    height: auto;
+    background-position: center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-pengenalan {
+    background: url(../gambar/aaron-burden-267491-unsplash-1.jpg);
+    width: 100%;
+    height: auto;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-kb_i {
+    background: url(../gambar/aaron-burden-265916-unsplash-1.jpg);
+    width: 100%;
+    height: auto;
+    background-position: center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-kb_ii {
+    background: url(../gambar/igor-ovsyannykov-125073-unsplash-1.jpg);
+    width: 100%;
+    height: auto;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-pengayaan {
+    background: url(../gambar/stephen-leonardi-417402-unsplash-1.jpg);
+    width: 100%;
+    height: auto;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-penutup {
+    background: url(../gambar/ousa-chea-552189-unsplash-1.jpg);
+    width: 100%;
+    height: auto;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.text-petunjuk {
+    color: #1a1a1a;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.text-gawanan {
+    text-transform: none;
+    white-space: normal;
+    text-align: left;
+    font-weight: normal;
+}
 
 /* MARGIN, PADDING, DKK */
 
@@ -123,6 +253,48 @@ img {
     margin-bottom: 5px;
 }
 
+div > p.small {
+    text-align: center;
+}
+
+.rodo-nengah {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.li-ngiri {
+    margin-left: -22px;
+}
+
+.daftar-pustaka {
+    text-indent: -3em;
+    margin-left: 3em;
+}
+
+.row-middle {
+    vertical-align: middle !important;
+}
+
+.tabel-glosarium {
+    margin-top: -17px;
+}
+
+.tabel-glosarium tr {
+    vertical-align: top;
+    text-align: justify;
+}
+
+.tabel-glosarium th {
+    text-align: right;
+}
+
+.tabel-glosarium h4 {
+    color: dodgerblue;
+    margin-bottom: -3px;
+    margin-top: 21px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #ccc;
+}
 
 /* QUIZ */
 
@@ -151,7 +323,7 @@ ul.responses li {
     border: 1.3px solid #ff7f2a;
     border-bottom: 3px solid #ff7f2a;
     background-color: #fff;
-    margin-left: 1em;
+    margin-left: 10px;
     font-weight: bold;
     font-size: 0.9rem;
 }
@@ -172,7 +344,8 @@ ul.responses li {
     background-color: #37be37;
 }
 
-.responses, .answers{
+.responses,
+.answers {
     margin-left: -3.2em !important;
 }
 

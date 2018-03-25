@@ -32,7 +32,7 @@
                 numberOfQuestions: null,
                 randomSortQuestions: false,
                 randomSortAnswers: false,
-                preventUnanswered: false,
+                preventUnanswered: true,
                 disableScore: false,
                 disableRanking: true,
                 scoreAsPercentage: true,
@@ -212,7 +212,7 @@
 
                 // add retry button to results view, if enabled
                 if (plugin.config.tryAgainText && plugin.config.tryAgainText !== '') {
-                    $quizResultsCopy.append('<p><a class="button ' + tryAgainClass + '" href="#">' + plugin.config.tryAgainText + '</a></p><br/><hr/>');
+                    $quizResultsCopy.append('<p class="text-center mt-4 mb-0"><a class="button ' + tryAgainClass + '" href="#">' + plugin.config.tryAgainText + '</a></p><br/><hr/>');
                 }
 
                 // Setup questions
